@@ -1,0 +1,438 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.body {
+    background-color:#0F1624;
+    width: 100%;
+    height: 5400px;
+    overflow-x: hidden;
+    position: relative;
+
+}
+
+.wrapper {
+    max-width: 1200px;
+    height: inherit;
+    margin: 0 auto;
+}
+
+/*
+---------------------------------
+Header
+---------------------------------
+*/
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 137px;
+    flex-wrap: wrap;
+}
+
+
+
+.header_logo {
+    display: flex;
+    margin-left: 37px;
+    column-gap: 30px;
+    flex-grow:1;
+}
+
+
+.header img {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: left;
+
+}
+
+.header a {
+   text-decoration: none;
+}
+
+.portfolio a {
+    color: white;
+    font-size: 30px;
+    left: 115px;
+}
+
+.nav {
+    flex-grow: 2;
+}
+
+
+.nav ul {
+    display: flex;
+    flex-direction: row;
+    column-gap: 40px;
+    padding-left: 70px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    padding: 0 10px;
+}
+
+
+.nav a::after {
+  content: '';
+  position: absolute;
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-image: url(../images/hover_efect.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+  top: 40px;
+  border-radius: 83px;
+}
+
+.nav a:hover::after {
+    width: 100%;
+  }
+
+.nav li {
+    list-style-type: none;
+    color: white;
+    font-size: 24px;
+    position: relative;
+}
+
+.logo img {
+    width: 28px;
+    height: 28px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+    flex-grow:1;
+}
+
+/*
+-------------------------------
+Main content
+-------------------------------
+*/
+
+.main {
+    margin-left: 80px;
+    margin-top: 117px;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 500px;
+}
+
+.main h1 {
+    color:white;
+    font-size: 55px;
+    font-weight: 600;
+    line-height: 82.5px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);   
+}
+
+.main p {
+    color:#BCBCBC;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 67px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+}
+
+
+.button {
+    width: 280px;
+    height: 80px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 83px;
+    background-image: url(../images/Rectangle.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    line-height: 42px;
+    font-style: normal;
+    margin-top: 67px;
+}
+
+.button a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.button:hover {
+    content: "";
+    background-image: url(../images/hover_button.jpg);
+    transition: all 0.5s ease-in-out;
+}
+
+.main img {
+    position: absolute;
+    right: 250px;
+    top: 150px;
+
+}
+
+/*
+------------------------
+Project section style
+------------------------
+*/
+
+.project h2 {
+    color:white;
+    font-size: 50px;
+    line-height: 82px;
+    padding-left: 90px;
+} 
+  
+   
+.project1 {
+    background: #0F1624;
+    box-shadow: 0px 0px 12px #FFFFFF;
+    border-radius: 50px 0px;
+    display:flex;
+    flex-direction: row;
+    justify-content: left;
+    margin: 50px 40px 0 10px;
+}
+
+.column_class {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 25px;
+}
+
+.rectangle_img img {
+    width: 250px;
+    height: 8px; 
+}
+
+.project1 h3 {
+    font-size: 36px;
+    line-height: 88.5%;
+    color: white;
+    padding-top: 65px;
+}
+
+.project_img img {
+    height: 500px;
+    width: 500px;
+    padding: 15px;
+}
+.column_class p {
+    color: white;
+    font-size: 28px;
+    line-height: 42px;
+    text-align: center;
+    margin: 20px 60px;
+}
+
+.project1_button {
+    width: 220px;
+    height: 65px;
+    background-image: url(../images/Rectangle.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 83px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project1_button a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.project1_button:hover {
+    content: "";
+    background-image: url(../images/hover_button.jpg);
+    transition: all 0.5s ease-in-out;
+}  
+
+/*
+-----------------------
+Project section 2 style
+-------------------------
+*/
+
+/* .project2 {
+    box-shadow: 0px 0px 12px #FFFFFF;
+    border-radius: 50px 0px;
+    width: 531.82px;
+    min-height: 720px;
+    top: 1861px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.project_2_section img{
+    position: absolute;
+    width: 483.47px;
+    max-height: 273.6px;
+    top: 1887px;
+    left: 24px;
+}
+
+.project2 h3 {
+    position: absolute;
+    color: white;
+    font-size: 36px;
+    line-height: 88.5%;
+    top: 330px;
+    display: flex;
+}
+
+.project2 p {
+    left: 30px;
+    top: 413px;
+    color: white;
+    text-align: center;
+    width: 483.47px;
+    height: 216px;
+    position: absolute;
+    font-size: 28px;
+}
+
+.project2 img {
+    height: 4px;
+    width: 290px;
+    position: absolute;
+    left: 136px;
+    top: 385px;
+}
+
+.project2_button {
+    width: 220px;
+    height: 65px;
+    position: absolute;
+    background-image: url(../image/Rectangle.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 83px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 160px;
+    top: 625px;
+}
+
+.project2_button a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.project2_button:hover {
+    content: "";
+    background-image: url(../image/Purple_White.jpg);
+    transition: all 0.5s ease-in-out;
+} 
+
+
+
+/*
+-------------------------
+Project section 3 style
+-------------------------
+*/
+
+
+.project3 {
+    box-shadow: 0px 0px 12px #FFFFFF;
+    border-radius: 50px 0px;
+    min-width: 531.82px;
+    min-height: 720px;
+    top: 1861px;
+    left: 653px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.project_3_section img{
+    position: absolute;
+    width: 483.47px;
+    height: 273.6px;
+    top: 1887px;
+    right: 38px;
+}
+
+.project3 h3 {
+    position: absolute;
+    color: white;
+    font-size: 36px;
+    line-height: 88.5%;
+    top: 330px;
+    right: 159px;
+    display: flex;
+}
+
+.project3 p {
+    right: 24px;
+    top: 413px;
+    color: white;
+    text-align: center;
+    width: 483.47px;
+    min-height: 216px;
+    position: absolute;
+    font-size: 28px;
+}
+
+.project3 img {
+    height: 4px;
+    width: 290px;
+    position: absolute;
+    right: 121px;
+    top: 385px;
+}
+
+.project3_button {
+    width: 220px;
+    height: 65px;
+    position: absolute;
+    background-image: url(../image/Rectangle.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 83px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 165px;
+    top: 625px;
+}
+
+.project3_button a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.project3_button:hover {
+    content: "";
+    background-image: url(../image/Purple_White.jpg);
+    transition: all 0.5s ease-in-out;
+}  */

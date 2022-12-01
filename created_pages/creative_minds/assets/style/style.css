@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: inherit; 
+}
+
+.header {
+    background-color: #0e3655;
+    height: 40px;
+}
+
+
+.header-img img{
+    text-align: left;
+    width: 15px;
+    padding-top: 7px;
+    float: left;
+    margin: 7px;
+
+}
+.number {
+    text-align: right;
+    color: #75838F;
+    padding-top: 10px;
+    float: right;
+}
+
+/*
+----------------------------------
+nav style
+----------------------------------
+*/
+
+.nav {
+    background-color: white;
+    width: 100%;
+    height: 60px;
+    text-align: right;
+}
+
+.img {
+    width: 18px;
+    float:left;
+    margin: 17px 0px 0px 10px;
+}
+
+.arrive {
+    float: left;
+    margin: 17px 3px;
+    font-size: 23px;
+    font-weight: bolder;
+    color: #0e3655;
+
+}
+
+
+.nav li {
+    display: inline-block;
+    font-size: 14px;
+    margin: 0px 0px 0px 30px;
+    line-height: 60px;  
+    color: #0e3655;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #0e3655;
+}
+
+
+.home {
+    text-align: center;
+    border: none;
+    width: 60px;
+    background-color: #43ca83;  
+    font-size: bolder; 
+}
+
+.home a {
+    color: white;
+}
+
+/*
+------------------------------------
+body style
+-----------------------------------
+*/
+
+
+.body {
+    width: 100%;
+    height: 500px;
+    
+}
+ .body-image {
+    height: 500px; 
+    background-image: url('../images/buildings.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+
+.image-green {
+    height: inherit;
+    width: 100%;
+    background-color: rgba(67, 202, 131, 0.75);
+    
+}
+
+.image-h1 {
+    color: white;
+    font-size: 65px;
+    position: absolute;
+    bottom: 110px;       
+}
+ 
+.image-p {
+    color: white;   
+    position: absolute;
+    bottom: 80px; 
+    font-size: 20px; 
+}
+
+/*
+------------------------------
+body-2
+-------------------------------
+*/
+
+.body-2 {
+    width: 100%;
+    height: 600px;
+    background-color: #F5F5F5;
+    
+    margin-bottom: 50px;
+}
+
+.inline-photo {
+    width: 650px;
+    height: 500px;
+    float: right;
+    padding-top: 85px;
+    padding-left: 20px; 
+}
+
+.inline-text {
+    text-align: justify;
+    line-height: 35px;
+}
+
+.inline-text h2 {
+    font-size: 40px;
+    padding: 100px 0px 20px 0px;
+}
+
+.inline-text p {
+    font-size: 20px;
+    padding: 10px 0px 20px 0px;
+}
+
+.button {
+    padding: 15px 25px;
+    background-color: #43ca83;
+    color: white;
+    border: none;
+}
+
+/*
+-------------------------------
+body-3 style
+------------------------------*/
+
+.body-3 {
+    width: 100%;
+    height: 700px;
+    background-color: white;
+}
+
+.services-text h2 {
+    text-align: center;
+    padding: 0px 0px 40px 0px;
+    font-size: 30px;
+}
+.services-text p {
+    text-align: center;
+    padding: 0px 100px 50px 100px;
+    line-height: 25px;
+}
+
+
+
+.body-box {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    column-gap: 25px;
+}
+
+
+.body-box img {
+   width: 40px;
+   padding-top: 25px;
+}
+
+.box1 p {
+    padding: 20px;
+    line-height: 23px;
+    color: #919191;
+    text-align: center;
+}
+
+.box1 {
+    border: 1px solid #43ca83;
+    padding: 50px 0px 50px 0px;
+}
+
+.box1-image {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+    background-color: #43ca83;
+    border-radius: 50%; 
+    margin-bottom: 20px;
+}
+
+
+.box1 h3 {
+    text-decoration: underline #43ca83;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 0.4rem;
+}
+
+
+
+/* 
+-------------------------------------
+body-4 style 
+------------------------------------
+*/
+
+
+.body-4 {
+    width: 100%;
+    height: 300px;
+    background-color: #0e3655;
+}
+
+
+.body-4 h2 {
+    color: white;
+    text-align: center;
+    padding: 110px 0px 40px 0px;
+}
+
+.body4-text p {
+    color: white;
+    text-align: center;
+    line-height: 25px;
+    padding: 0px 150px 20px 150px;
+    font-weight: 100;
+}
+
+/*
+----------------------------------
+footer style
+---------------------------------
+*/
+
+
+.footer {
+    background-color: #0e3655;
+    border: 1px solid white;
+    width: 100%;
+    height: 150px;
+    font-size: 12px;
+    line-height: 5px;
+    display: inline-block;
+    
+}
+
+.footer h3 {
+    color: #5584A9; 
+    float: left;
+    line-height: 150px;
+    font-weight: lighter;
+}
+
+.footer p {
+    color:rgba(67, 202, 131, 0.75);
+    display: inline;
+    font-weight: lighter;
+}
+
+.footer-img img {
+    width: 20px;
+    margin: 7px;
+}
+
+.footer-img {
+    float: right;
+    line-height: 150px;
+    margin: 10px;  
+}

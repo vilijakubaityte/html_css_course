@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+    max-width: 1700px;
+    margin: 0 auto;
+    
+}
+
+.header {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    column-gap: 50px;
+    flex-wrap: wrap;
+    
+}
+
+/*
+-----------------------------
+table-1-style
+-----------------------------
+*/
+
+.table_1_round {
+    border: 5px solid #50C3CC;
+    background-color: white;
+    text-align: center;
+    padding: 18px;
+    border-radius: 50px;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    margin: 0px -20px;
+}
+
+.table_1_round h3{
+    font-size: 23px;
+    font-weight: bolder;
+    color: #50C3CC;
+}
+
+
+.table_1 {
+    width: 350px;
+    height: 600px;
+    text-align: center;
+    padding-top: 30px;
+    position: relative;
+}
+
+
+.table_1_img {
+    width: 300px;
+    border: none;
+    background-color: #50C3CC;
+    border-radius: 10px;
+    padding: 50px;
+    margin-top: 20px;
+}
+
+.table_1 h2 {
+    color: #F44A3A;
+    font-size: 30px;
+    text-align: center;
+    padding: 15px;
+}
+
+.table_1 p {
+    font-size: 17px;
+    line-height: 1.6;
+    color: #505050;
+    line-break: 1px;
+}
+
+/*
+---------------------------
+table-2-style
+---------------------------
+*/
+
+.table_2_round {
+    border: 5px solid #3A6EC0;
+    background-color: white;
+    text-align: center;
+    padding: 18px;
+    border-radius: 50px;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    margin: 0px -20px;
+}
+
+.table_2_round h3{
+    font-size: 23px;
+    font-weight: bolder;
+    color: #3A6EC0;
+}
+
+
+.table_2 {
+    border: none;
+    width: 350px;
+    height: 600px;
+    text-align: center;
+    padding-top: 30px;
+    position: relative;
+}
+
+
+.table_2_img {
+    width: 300px;
+    border: none;
+    background-color: #3A6EC0;
+    border-radius: 10px;
+    padding: 50px;
+    margin-top: 20px;
+}
+
+.table_2 h2 {
+    color: #F44A3A;
+    font-size: 30px;
+    text-align: center;
+    padding: 15px;
+}
+
+.table_2 p {
+    font-size: 17px;
+    line-height: 1.6;
+    color: #505050;
+    line-break: 1px;
+}
+
+/*
+----------------------------
+table-3-style
+----------------------------
+*/
+
+.table_3_round {
+    border: 5px solid #F34D33;
+    background-color: white;
+    text-align: center;
+    padding: 18px;
+    border-radius: 50px;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    margin: 0px -20px;
+}
+
+.table_3_round h3{
+    font-size: 23px;
+    font-weight: bolder;
+    color: #F34D33;
+}
+
+
+.table_3 {
+    border: none;
+    width: 350px;
+    height: 600px;
+    text-align: center;
+    padding-top: 30px;
+    position: relative;
+}
+
+.table_3_img {
+    width: 300px;
+    border: none;
+    background-color: #F34D33;
+    border-radius: 10px;
+    padding: 50px;
+    margin-top: 20px;
+}
+
+.table_3 h2 {
+    color: #F44A3A;
+    font-size: 30px;
+    text-align: center;
+    padding: 15px;
+}
+
+.table_3 p {
+    font-size: 17px;
+    line-height: 1.6;
+    color: #505050;
+    line-break: 1px;
+}
+
+/*
+----------------------------
+table-4-style
+----------------------------
+*/
+
+.table_4_round {
+    border: 5px solid #919191;
+    background-color: white;
+    text-align: center;
+    padding: 18px;
+    border-radius: 50px;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    margin: 0px -20px;
+}
+
+.table_4_round h4{
+    font-size: 23px;
+    font-weight: bolder;
+    color: #919191;
+}
+
+
+.table_4 {
+    border: none;
+    width: 350px;
+    height: 600px;
+    text-align: center;
+    padding-top: 30px;
+    position: relative;
+}
+
+
+.table_4_img {
+    width: 300px;
+    border: none;
+    background-color: #919191;
+    border-radius: 10px;
+    padding: 50px;
+    margin-top: 20px;
+}
+
+.table_4 h2 {
+    color: #F44A3A;
+    font-size: 30px;
+    text-align: center;
+    padding: 15px;
+}
+
+.table_4 p {
+    font-size: 17px;
+    line-height: 1.6;
+    color: #505050;
+    line-break: 1px;
+}
