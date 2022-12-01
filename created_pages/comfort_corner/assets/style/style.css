@@ -323,13 +323,17 @@ Section 5 class style
     align-items: center;
     display: flex;
     font-weight: 100;
-    margin-left: 295px;
-    margin-top: -60px;
 }
 
 .section_5_img_1, .section_5_img_2, .section_5_img_3 {
     width: 350px;
 }
+
+.section_table_5 {
+    display: flex;
+    justify-content: space-between;
+}
+
 
 
 .section_5_img_1 img{
@@ -358,18 +362,19 @@ Section 5 class style
     transition: all 0.5s ease-in-out;
 }
 
-.section_5 h3 {
+.section_table_5 h3 {
     color: #5A7CA8;
-    width: 107px;
 }
 
-.section_5 h4 {
+.section_table_5 h4 {
     color: #5A7CA8;
-    margin-bottom: 20px;
-    width: 130px;
     font-weight: 100;
 }
 
+.column_section {
+    display: flex;
+    flex-direction: column;
+}
 
 .section_5 p {
     color: #5A7CA8;
