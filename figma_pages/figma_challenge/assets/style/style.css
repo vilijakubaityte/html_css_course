@@ -10,14 +10,13 @@
     width: 100%;
     height: 5400px;
     overflow-x: hidden;
-    position: relative;
-
 }
 
 .wrapper {
     max-width: 1200px;
     height: inherit;
     margin: 0 auto;
+    position: relative;
 }
 
 /*
@@ -76,6 +75,13 @@ Header
     padding-left: 70px;
 }
 
+@media (max-width: 980px) {
+    .nav ul {
+        display: none;
+
+}
+}
+
 .nav a {
     text-decoration: none;
     color: white;
@@ -120,6 +126,13 @@ Header
     flex-grow:1;
 }
 
+@media (max-width: 400px){
+    .logo img {
+        display: none;
+    }
+}
+
+
 /*
 -------------------------------
 Main content
@@ -130,6 +143,7 @@ Main content
     margin-left: 80px;
     margin-top: 117px;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     min-height: 500px;
 }
@@ -181,7 +195,7 @@ Main content
 
 .main img {
     position: absolute;
-    right: 250px;
+    right: 0;
     top: 150px;
 
 }
@@ -195,26 +209,30 @@ Project section style
 .project h2 {
     color:white;
     font-size: 50px;
-    line-height: 82px;
-    padding-left: 90px;
+    padding: 70px 0 20px 90px;
 } 
   
    
 .project1 {
+    width: 100%;
     background: #0F1624;
     box-shadow: 0px 0px 12px #FFFFFF;
     border-radius: 50px 0px;
     display:flex;
     flex-direction: row;
-    justify-content: left;
-    margin: 50px 40px 0 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 40px 0 0;
 }
+
 
 .column_class {
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 25px;
+    row-gap: 20px;
+    flex-basis: 500px;
+    flex-grow:1;
 }
 
 .rectangle_img img {
@@ -228,17 +246,22 @@ Project section style
     color: white;
     padding-top: 65px;
 }
+.project_img {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .project_img img {
-    height: 500px;
-    width: 500px;
+    max-height: 500px;
+    max-width: 500px;
     padding: 15px;
+    width: 100%;
 }
 .column_class p {
     color: white;
     font-size: 28px;
     line-height: 42px;
-    text-align: center;
+    text-align: left;
     margin: 20px 60px;
 }
 
@@ -272,69 +295,70 @@ Project section 2 style
 -------------------------
 */
 
-/* .project2 {
+.project_2_section {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+    flex-wrap: wrap;
+}
+
+/*
+------------------------
+Project 2 style
+-------------------------
+*/
+
+
+.project2 {
     box-shadow: 0px 0px 12px #FFFFFF;
     border-radius: 50px 0px;
-    width: 531.82px;
+    max-width: 530px;
     min-height: 720px;
-    top: 1861px;
-    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+}
+
+.project_2_img img {
+    padding: 20px;
+    width: 100%;
+}
+
+
+.column_class_2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
 
-.project_2_section img{
-    position: absolute;
-    width: 483.47px;
-    max-height: 273.6px;
-    top: 1887px;
-    left: 24px;
-}
-
-.project2 h3 {
-    position: absolute;
-    color: white;
+.column_class_2 h3 {
+    color: #ffff;
     font-size: 36px;
-    line-height: 88.5%;
-    top: 330px;
-    display: flex;
+
 }
 
-.project2 p {
-    left: 30px;
-    top: 413px;
-    color: white;
-    text-align: center;
-    width: 483.47px;
-    height: 216px;
-    position: absolute;
-    font-size: 28px;
-}
-
-.project2 img {
+.rectangle_img_2 img {
     height: 4px;
     width: 290px;
-    position: absolute;
-    left: 136px;
-    top: 385px;
+}
+
+.column_class_2 p {
+    color: #ffff;
+    font-size: 28px;
+    padding: 10px 0 40px 20px;
 }
 
 .project2_button {
     width: 220px;
     height: 65px;
-    position: absolute;
-    background-image: url(../image/Rectangle.png);
+    background-image: url(../images/Rectangle.png);
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 83px;
     display: flex;
     justify-content: center;
     align-items: center;
-    left: 160px;
-    top: 625px;
 }
 
 .project2_button a {
@@ -345,94 +369,180 @@ Project section 2 style
 
 .project2_button:hover {
     content: "";
-    background-image: url(../image/Purple_White.jpg);
+    background-image: url(../images/hover_button.jpg);
     transition: all 0.5s ease-in-out;
-} 
-
+}  
 
 
 /*
+----------------------------
+Section 3
+----------------------------
+*/
+
+.project_section_3 {
+
+    height: 1000px;
+    width: 100%;
+    padding-top: 70px;
+}
+
+.project_section_3 h2{
+    color: white;
+    font-size: 56px;
+    padding-bottom: 40px;
+}
+
+.text_inside_border {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 0 20px;
+    font-size: 24px;
+}
+
+
+.first_border {
+    position: relative;
+    width: 100%;
+    height: 32px;
+    border-radius: 83px;
+    background-color: #162950;
+    margin: 10px 0 35px;
+}
+
+.border_inside {
+    position: absolute;
+    width: 70%;
+    height: 32px;
+    background-color:#945DD6;
+    border-radius: 83px;
+}
+
+.border_inside2 {
+    position: absolute;
+    width: 50%;
+    height: 32px;
+    background-color:#945DD6;
+    border-radius: 83px;
+}
+
+.border_inside3 {
+    position: absolute;
+    width: 25%;
+    height: 32px;
+    background-color:#945DD6;
+    border-radius: 83px;
+}
+
+/*
 -------------------------
-Project section 3 style
+Section 4 style
 -------------------------
 */
 
 
-.project3 {
-    box-shadow: 0px 0px 12px #FFFFFF;
-    border-radius: 50px 0px;
-    min-width: 531.82px;
-    min-height: 720px;
-    top: 1861px;
-    left: 653px;
-    position: absolute;
+.project_section_4 h3 {
+    color: #ffff;
+    font-size: 48px;
+}
+
+
+.project_section_4 img {
+    width: 25px;
+    height: 25px;
+    margin: 15px 50px 0 0;
+}
+
+.project_section_4 {
+    row-gap: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+    flex-wrap: wrap;
 }
 
-.project_3_section img{
-    position: absolute;
-    width: 483.47px;
-    height: 273.6px;
-    top: 1887px;
-    right: 38px;
+.block_column {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.project3 h3 {
-    position: absolute;
-    color: white;
-    font-size: 36px;
-    line-height: 88.5%;
-    top: 330px;
-    right: 159px;
+.first_column {
+    color: #ffff;
+    font-size: 32px;
+    row-gap: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 320px;
+    flex-grow: 2;
+    padding-bottom: 30px;
+}
+
+.column_first {
     display: flex;
 }
 
-.project3 p {
-    right: 24px;
-    top: 413px;
-    color: white;
-    text-align: center;
-    width: 483.47px;
-    min-height: 216px;
-    position: absolute;
+
+.second_column {
+    color: #ffff;
+    font-size: 32px;
+    row-gap: 30px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 40px;
+    width: 100%;
+    max-width: 320px;
+}
+
+.column_second {
+    display: flex;
+}
+
+
+/*
+-------------------------
+Section 5 style
+-------------------------
+*/
+
+.project_section_5 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.section_5_text {
+    color: #ffff;
+    font-size: 55px;
+    padding-left: 50px;
+    flex-basis: 555px;
+    line-height: 1.7;
+    row-gap: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.project_section_5 p {
     font-size: 28px;
 }
 
-.project3 img {
-    height: 4px;
-    width: 290px;
+.section_5_img {
+    position: relative;
+    min-height: inherit;
+    flex-basis: 550px;
+    top: 130px;
+}
+
+.bubble_img img {
     position: absolute;
-    right: 121px;
-    top: 385px;
+    width: 450px;
+    height: 450px;
+
 }
 
-.project3_button {
-    width: 220px;
-    height: 65px;
+.girl_img img {
     position: absolute;
-    background-image: url(../image/Rectangle.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 83px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    right: 165px;
-    top: 625px;
+    width: 450px;
+    height: 420px;
+    top: 50px;
 }
-
-.project3_button a {
-    color: white;
-    text-decoration: none;
-    text-align: center;
-}
-
-.project3_button:hover {
-    content: "";
-    background-image: url(../image/Purple_White.jpg);
-    transition: all 0.5s ease-in-out;
-}  */
